@@ -1,0 +1,9 @@
+/* Зеленый стиль */
+QWidget {
+    background-color: #eeffc9;
+    color: #914220;
+}
+QPushButton {
+    background-color: #fafafa;
+    color: #914220;
+}

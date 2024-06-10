@@ -1,0 +1,9 @@
+/* Синий стиль */
+QWidget {
+    background-color: #89e5fa;
+    color: #99224d;
+}
+QPushButton {
+    background-color: #3bd1d1;
+    color: #99224d;
+}
