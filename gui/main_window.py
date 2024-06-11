@@ -3,9 +3,9 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QTabWidget
 from PyQt6.QtCore import QSettings, QLocale
 
 from gui.settings_general import GeneralSettingsTab
-from gui.settings_mailer import TrainingSettingsTab
+from gui.settings_mailer import MailerSettingsTab
 from gui.help_general import GeneralHelpTab
-from gui.help_mailer import TrainingHelpTab
+from gui.help_mailer import MailerHelpTab
 from gui.incoming_mail_tab import IncomingMailTab
 from gui.outgoing_mail_tab import OutgoingMailTab
 from controllers.main_controller import MainController
@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
         self.tab_settings_general = GeneralSettingsTab(self.controller)
         self.tab_settings.addTab(self.tab_settings_general, self.tr("General"))
 
-        self.tab_settings_training = TrainingSettingsTab(self.controller)
+        self.tab_settings_training = MailerSettingsTab(self.controller)
         self.tab_settings.addTab(self.tab_settings_training, self.tr("Mailer"))
 
         # Вкладка "Справка"
@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
         self.tab_help_general = GeneralHelpTab(self.controller)
         self.tab_help.addTab(self.tab_help_general, self.tr("General"))
 
-        self.tab_help_training = TrainingHelpTab(self.controller)
+        self.tab_help_training = MailerHelpTab(self.controller)
         self.tab_help.addTab(self.tab_help_training, self.tr("Mailer"))
 
     def restore_window_settings(self):
@@ -150,16 +150,3 @@ class MainWindow(QMainWindow):
             tab.update_style()
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-
-    settings = QSettings("MyCompany", "MyApp")
-    language_code = settings.value("language", QLocale.system().name())
-
-    controller = MainController(app, language_code)
-
-    window = MainWindow(controller)
-    controller.set_main_window(window)
-
-    window.show()
-    sys.exit(app.exec())

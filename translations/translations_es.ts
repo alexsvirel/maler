@@ -86,7 +86,7 @@
     </message>
 </context>
 <context>
-    <name>TrainingHelpTab</name>
+    <name>MailerHelpTab</name>
     <message>
         <source>Training Help Content</source>
         <translation>Contenido de Ayuda de Entrenamiento</translation>
@@ -97,7 +97,7 @@
     </message>
 </context>
 <context>
-    <name>TrainingSettingsTab</name>
+    <name>MailerSettingsTab</name>
     <message>
         <source>Training Settings Content</source>
         <translation>Contenido de Configuraciones de Entrenamiento</translation>

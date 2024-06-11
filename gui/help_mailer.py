@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QVBoxLayout, QLabel
 from base.base_tab import BaseTab
 
-class TrainingHelpTab(BaseTab):
+class MailerHelpTab(BaseTab):
     """
     Класс для под-вкладки "Обучение" в "Справка"
     """
