@@ -108,7 +108,7 @@
     </message>
 </context>
 <context>
-    <name>TrainingTabOne</name>
+    <name>IncomingMailTab</name>
     <message>
         <source>Incoming Mail Content</source>
         <translation>Содержание входящего письма</translation>
@@ -119,7 +119,7 @@
     </message>
 </context>
 <context>
-    <name>TrainingTabTwo</name>
+    <name>OutgoingMailTab</name>
     <message>
         <source>Outgoing Mail Content</source>
         <translation>Содержание исходящего письма</translation>
