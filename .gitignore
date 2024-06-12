@@ -23,3 +23,6 @@ _pycache_
 # папки и файлы приложения
 /.gitignore
 /bd_mailer.db
+/translations/translations_en.qm
+/translations/translations_es.qm
+/translations/translations_ru.qm
