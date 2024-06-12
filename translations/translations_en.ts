@@ -27,6 +27,22 @@
         <translation>General</translation>
     </message>
     <message>
+        <source>Initial</source>
+        <translation>Initial</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes</source>
+        <translation>E-mail Boxes</translation>
+    </message>
+    <message>
+        <source>Goods</source>
+        <translation>Goods</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs</source>
+        <translation>Outgoin Msgs</translation>
+    </message>
+    <message>
         <source>Help</source>
         <translation>Help</translation>
     </message>
@@ -97,14 +113,47 @@
     </message>
 </context>
 <context>
-    <name>MailerSettingsTab</name>
+    <name>MailerSettingsInitialTab</name>
     <message>
-        <source>Training Settings Content</source>
-        <translation>Training Settings Content</translation>
+        <source>Mailer Initial Settings Content</source>
+        <translation>Mailer Initial Settings Content</translation>
     </message>
     <message>
-        <source>Training Settings</source>
-        <translation>Training Settings</translation>
+        <source>Mailer Initial Settings Button</source>
+        <translation>Mailer Initial Settings Button</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsEmailBoxesTab</name>
+    <message>
+        <source>E-mail Boxes Content</source>
+        <translation>E-mail Boxes Content</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes button</source>
+        <translation>E-mail Boxes button</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsGoodsTab</name>
+    <message>
+        <source>Mailer Settings Goods Content</source>
+        <translation>Mailer Settings Goods Content</translation>
+    </message>
+    <message>
+        <source>Mailer Settings Goods button</source>
+        <translation>Mailer Settings Goods button</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsOutgoingMsgsTab</name>
+    <message>
+        <source>Outgoin Msgs Content</source>
+        <translation>Outgoin Msgs Content</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs Button</source>
+        <translation>Outgoin Msgs Button</translation>
     </message>
 </context>
 <context>

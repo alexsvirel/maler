@@ -27,6 +27,22 @@
         <translation>Общие</translation>
     </message>
     <message>
+        <source>Initial</source>
+        <translation>Начальные установки</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes</source>
+        <translation>Почтовые ящики</translation>
+    </message>
+    <message>
+        <source>Goods</source>
+        <translation>Товары</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs</source>
+        <translation>Исходящие сообщения</translation>
+    </message>
+    <message>
         <source>Help</source>
         <translation>Справка</translation>
     </message>
@@ -97,14 +113,47 @@
     </message>
 </context>
 <context>
-    <name>MailerSettingsTab</name>
+    <name>MailerSettingsInitialTab</name>
     <message>
-        <source>Training Settings Content</source>
-        <translation>Содержание настроек обучения</translation>
+        <source>Mailer Initial Settings Content</source>
+        <translation>Содержание начальных настроек Почтовика</translation>
     </message>
     <message>
-        <source>Training Settings</source>
-        <translation>Настройки обучения</translation>
+        <source>Mailer Initial Settings Button</source>
+        <translation>Кнопка начальных настроек Почтовика</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsEmailBoxesTab</name>
+    <message>
+        <source>E-mail Boxes Content</source>
+        <translation>Содержание вкладки Почтовые ящики</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes button</source>
+        <translation>Кнопка на вкладке Почтовые ящики</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsGoodsTab</name>
+    <message>
+        <source>Mailer Settings Goods Content</source>
+        <translation>Содержание настройка товаров</translation>
+    </message>
+    <message>
+        <source>Mailer Settings Goods button</source>
+        <translation>Кнопка настройка товаров</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsOutgoingMsgsTab</name>
+    <message>
+        <source>Outgoin Msgs Content</source>
+        <translation>Содержание исходящих сообщений</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs Button</source>
+        <translation>Кнопка исходящий сообщений</translation>
     </message>
 </context>
 <context>

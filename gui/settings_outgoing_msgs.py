@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QVBoxLayout, QLabel, QPushButton
 from base.base_tab import BaseTab
 
-class MailerSettingsTab(BaseTab):
+class MailerSettingsOutgoingMsgsTab(BaseTab):
     """
     Класс для под-вкладки "Обучение" в "Настройки"
     """
@@ -13,10 +13,10 @@ class MailerSettingsTab(BaseTab):
         """
         super().__init__(controller)
         self.layout = QVBoxLayout()
-        self.label = QLabel(self.tr("Training Settings Content"))
+        self.label = QLabel(self.tr("Outgoin Msgs Content"))
         self.layout.addWidget(self.label)
 
-        self.button = QPushButton(self.tr("Training Settings"))
+        self.button = QPushButton(self.tr("Outgoin Msgs Button"))
         self.layout.addWidget(self.button)
 
         self.setLayout(self.layout)
@@ -25,5 +25,5 @@ class MailerSettingsTab(BaseTab):
         """
         Обновление текстов виджетов при смене языка
         """
-        self.label.setText(self.tr("Training Settings Content"))
-        self.button.setText(self.tr("Training Settings"))
+        self.label.setText(self.tr("Outgoin Msgs Content"))
+        self.button.setText(self.tr("Outgoin Msgs Button"))

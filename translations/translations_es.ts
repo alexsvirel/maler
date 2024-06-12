@@ -27,6 +27,22 @@
         <translation>General</translation>
     </message>
     <message>
+        <source>Initial</source>
+        <translation>Inicial</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes</source>
+        <translation>Buzones de correo</translation>
+    </message>
+    <message>
+        <source>Goods</source>
+        <translation>Bienes</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs</source>
+        <translation>Mensaje saliente</translation>
+    </message>
+    <message>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
@@ -97,14 +113,47 @@
     </message>
 </context>
 <context>
-    <name>MailerSettingsTab</name>
+    <name>MailerSettingsInitialTab</name>
     <message>
-        <source>Training Settings Content</source>
-        <translation>Contenido de Configuraciones de Entrenamiento</translation>
+        <source>Mailer Initial Settings Content</source>
+        <translation>Contenido de la configuración inicial del correo</translation>
     </message>
     <message>
-        <source>Training Settings</source>
-        <translation>Configuraciones de Entrenamiento</translation>
+        <source>Mailer Initial Settings Button</source>
+        <translation>Botón de configuración inicial del correo</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsEmailBoxesTab</name>
+    <message>
+        <source>E-mail Boxes Content</source>
+        <translation>Contenido de los buzones de correo electrónico</translation>
+    </message>
+    <message>
+        <source>E-mail Boxes button</source>
+        <translation>Botón Buzones de correo electrónico</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsGoodsTab</name>
+    <message>
+        <source>Mailer Settings Goods Content</source>
+        <translation>Configuración del correo Contenido de mercancías</translation>
+    </message>
+    <message>
+        <source>Mailer Settings Goods button</source>
+        <translation>Botón de configuración de envío de mercancías</translation>
+    </message>
+</context>
+<context>
+    <name>MailerSettingsOutgoingMsgsTab</name>
+    <message>
+        <source>Outgoin Msgs Content</source>
+        <translation>Contenido del mensaje saliente</translation>
+    </message>
+    <message>
+        <source>Outgoin Msgs Button</source>
+        <translation>Botón de mensaje saliente</translation>
     </message>
 </context>
 <context>
