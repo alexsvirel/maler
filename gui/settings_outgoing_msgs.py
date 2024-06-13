@@ -1,8 +1,10 @@
-from PyQt6.QtWidgets import QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QPushButton, QLineEdit, QTextEdit, QDialog, \
-    QDialogButtonBox, QMessageBox
+from PyQt6.QtWidgets import (QVBoxLayout, QHBoxLayout, QLabel, QComboBox,
+                             QPushButton, QLineEdit, QTextEdit, QDialog,
+                             QDialogButtonBox, QMessageBox)
 from base.base_tab import BaseTab
-from utils.utils_db import add_template_to_db, get_template_names, get_template_details, update_template_in_db, \
-    remove_template_from_db
+from utils.db_settings_outgoing_msgs import (add_template_to_db, get_template_names,
+                                             get_template_details, update_template_in_db,
+                                             remove_template_from_db)
 
 
 class MailerSettingsOutgoingMsgsTab(BaseTab):

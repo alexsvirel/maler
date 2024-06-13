@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import QApplication
 
 from controllers.main_controller import MainController
 from gui.main_window import MainWindow
-from utils.utils_db import create_database
+from utils.db_init import create_database
 
 
 def check_for_database_availability():
