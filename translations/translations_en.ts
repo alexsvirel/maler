@@ -137,12 +137,88 @@
 <context>
     <name>MailerSettingsGoodsTab</name>
     <message>
-        <source>Mailer Settings Goods Content</source>
-        <translation>Mailer Settings Goods Content</translation>
+        <source>Product Properties</source>
+        <translation>Product Properties</translation>
     </message>
     <message>
-        <source>Mailer Settings Goods button</source>
-        <translation>Mailer Settings Goods button</translation>
+        <source>Click on the product name to edit its properties</source>
+        <translation>Click on the product name to edit its properties</translation>
+    </message>
+    <message>
+        <source>Add a product</source>
+        <translation>Add a product</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Save</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancel</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Delete</translation>
+    </message>
+    <message>
+        <source>Product Name:</source>
+        <translation>Product Name:</translation>
+    </message>
+    <message>
+        <source>Sender Email:</source>
+        <translation>Sender Email:</translation>
+    </message>
+    <message>
+        <source>Application:</source>
+        <translation>Application:</translation>
+    </message>
+    <message>
+        <source>Application Mode:</source>
+        <translation>Application Mode:</translation>
+    </message>
+    <message>
+        <source>Application Level:</source>
+        <translation>Application Level:</translation>
+    </message>
+    <message>
+        <source>Period:</source>
+        <translation>Period:</translation>
+    </message>
+    <message>
+        <source>Product Link:</source>
+        <translation>Product Link:</translation>
+    </message>
+    <message>
+        <source>Manual Link:</source>
+        <translation>Manual Link:</translation>
+    </message>
+    <message>
+        <source>Message Template:</source>
+        <translation>Message Template:</translation>
+    </message>
+    <message>
+        <source>Use mailing</source>
+        <translation>Use mailing</translation>
+    </message>
+    <message>
+        <source>Day</source>
+        <translation>Day</translation>
+    </message>
+    <message>
+        <source>Template</source>
+        <translation>Template</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Add</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Warning</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete the record?</source>
+        <translation>Are you sure you want to delete the record?</translation>
     </message>
 </context>
 <context>

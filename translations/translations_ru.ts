@@ -137,12 +137,88 @@
 <context>
     <name>MailerSettingsGoodsTab</name>
     <message>
-        <source>Mailer Settings Goods Content</source>
-        <translation>Содержание настройка товаров</translation>
+        <source>Product Properties</source>
+        <translation>Свойства продукта</translation>
     </message>
     <message>
-        <source>Mailer Settings Goods button</source>
-        <translation>Кнопка настройка товаров</translation>
+        <source>Click on the product name to edit its properties</source>
+        <translation>Щелкните по названию продукта, чтобы изменить его свойства</translation>
+    </message>
+    <message>
+        <source>Add a product</source>
+        <translation>Добавить продукт</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отменить</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Product Name:</source>
+        <translation>Название продукта:</translation>
+    </message>
+    <message>
+        <source>Sender Email:</source>
+        <translation>E-mail отправителя:</translation>
+    </message>
+    <message>
+        <source>Application:</source>
+        <translation>Приложение:</translation>
+    </message>
+    <message>
+        <source>Application Mode:</source>
+        <translation>Режим приложения:</translation>
+    </message>
+    <message>
+        <source>Application Level:</source>
+        <translation>Уровень приложения:</translation>
+    </message>
+    <message>
+        <source>Period:</source>
+        <translation>Период:</translation>
+    </message>
+    <message>
+        <source>Product Link:</source>
+        <translation>Ссылка на продукт:</translation>
+    </message>
+    <message>
+        <source>Manual Link:</source>
+        <translation>Ссылка на руководство:</translation>
+    </message>
+    <message>
+        <source>Message Template:</source>
+        <translation>Шаблон сообщения:</translation>
+    </message>
+    <message>
+        <source>Use mailing</source>
+        <translation>Использовать рассылку</translation>
+    </message>
+    <message>
+        <source>Day</source>
+        <translation>День</translation>
+    </message>
+    <message>
+        <source>Template</source>
+        <translation>Шаблон</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Добавить</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Предупреждение</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete the record?</source>
+        <translation>Вы уверены, что хотите удалить запись?</translation>
     </message>
 </context>
 <context>
