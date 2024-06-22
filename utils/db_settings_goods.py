@@ -55,15 +55,21 @@ def save_good(good):
     connection.commit()
     connection.close()
 
-def delete_record_by_id(good):
-    record_id = good['id']
+
+def delete_good_by_id(good):
+    """
+    Удаление записи о товаре по ID из таблицы GOODS
+    :param good:
+    :return:
+    """
+    good_id = good['id']
     try:
         # Подключение к базе данных
         conn = sqlite3.connect('bd_mailer.db')
         cursor = conn.cursor()
 
-        # SQL-запрос для удаления строки по ID
-        sql_delete_query = f"DELETE FROM GOODS WHERE ID = {record_id};"
+        # SQL-запрос для удаления строки товара по ID
+        sql_delete_query = f"DELETE FROM GOODS WHERE ID = {good_id};"
 
         # Выполнение SQL-запроса
         cursor.execute(sql_delete_query)

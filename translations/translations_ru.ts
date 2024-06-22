@@ -7,8 +7,12 @@
         <translation>Почтовик</translation>
     </message>
     <message>
-        <source>Mail Processing</source>
+        <source>E-mail Processing</source>
         <translation>Обработка писем</translation>
+    </message>
+    <message>
+        <source>Processing result</source>
+        <translation>Результат обработки</translation>
     </message>
     <message>
         <source>Incoming Mail</source>
@@ -224,12 +228,71 @@
 <context>
     <name>MailerSettingsOutgoingMsgsTab</name>
     <message>
-        <source>Outgoin Msgs Content</source>
-        <translation>Содержание исходящих сообщений</translation>
+        <source>Template</source>
+        <translation>Шаблон</translation>
     </message>
     <message>
-        <source>Outgoin Msgs Button</source>
-        <translation>Кнопка исходящий сообщений</translation>
+        <source>Add</source>
+        <translation>Добавить</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Sender</source>
+        <translation>Отправитель</translation>
+    </message>
+    <message>
+        <source>Subject</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Content</source>
+        <translation>Содержимое</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Add Template</source>
+        <translation>Добавить шаблон</translation>
+    </message>
+    <message>
+        <source>Enter template name:</source>
+        <translation>Введите имя шаблона:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Предупреждение</translation>
+    </message>
+    <message>
+        <source>Please add and select a template before saving.</source>
+        <translation>Пожалуйста, добавьте и выберите шаблон перед сохранением.</translation>
+    </message>
+    <message>
+        <source>Remove Template</source>
+        <translation>Удалить шаблон</translation>
+    </message>
+    <message>
+        <source>Do you want to remove the template </source>
+        <translation>Вы хотите удалить шаблон </translation>
+    </message>
+</context>
+<context>
+    <name>StartStopEmailProcessingTab</name>
+    <message>
+        <source>E-mail processing result</source>
+        <translation>Результат обработки электронной почты</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Начать</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Остановить</translation>
     </message>
 </context>
 <context>

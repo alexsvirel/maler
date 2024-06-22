@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import (QVBoxLayout, QHBoxLayout, QLabel, QComboBox,
 from base.base_tab import BaseTab
 from utils.db_settings_outgoing_msgs import (add_template_to_db, get_template_names,
                                              get_template_details, update_template_in_db,
-                                             remove_template_from_db)
+                                             remove_template_from_db, get_template_id)
 
 
 class MailerSettingsOutgoingMsgsTab(BaseTab):
@@ -79,17 +79,6 @@ class MailerSettingsOutgoingMsgsTab(BaseTab):
         # Установка основного макета
         self.setLayout(self.layout)
 
-    def retranslate_ui(self):
-        """
-        Обновление текстов виджетов при смене языка
-        """
-        self.label.setText(self.tr("Template"))
-        self.add_button.setText(self.tr("Add"))
-        self.remove_button.setText(self.tr("Remove"))
-        self.sender_label.setText(self.tr("Sender"))
-        self.subject_label.setText(self.tr("Subject"))
-        self.content_label.setText(self.tr("Content"))
-        self.save_button.setText(self.tr("Save"))
 
     def update_combo_box(self):
         """
@@ -127,9 +116,11 @@ class MailerSettingsOutgoingMsgsTab(BaseTab):
         Добавление нового шаблона в базу данных
         :param dialog: Диалоговое окно для добавления шаблона
         """
+        template_ids = get_template_id()
+        new_id = max(template_ids) + 1
         template_name = self.template_name_edit.text()
         if template_name:
-            add_template_to_db(template_name)
+            add_template_to_db(new_id, template_name)
             self.update_combo_box()
             dialog.accept()
 
@@ -143,6 +134,7 @@ class MailerSettingsOutgoingMsgsTab(BaseTab):
             subject = self.subject_edit.text()
             content = self.content_edit.toPlainText()
             update_template_in_db(template_name, sender, subject, content)
+            QMessageBox.warning(self, self.tr("Warning"), "Шаблон сохранен")
         else:
             self.show_no_template_dialog()
 
@@ -175,7 +167,7 @@ class MailerSettingsOutgoingMsgsTab(BaseTab):
         template_name = self.combo_box.currentText()
         if template_name:
             reply = QMessageBox.question(self, self.tr("Remove Template"),
-                                         self.tr(f"Do you want to remove the template '{template_name}'?"),
+                                         (self.tr("Do you want to remove the template ")+(f"\n'{template_name}'?")),
                                          QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
             if reply == QMessageBox.StandardButton.Yes:
                 remove_template_from_db(template_name)
@@ -185,3 +177,15 @@ class MailerSettingsOutgoingMsgsTab(BaseTab):
                 self.content_edit.clear()
         else:
             self.show_no_template_dialog()
+
+    def retranslate_ui(self):
+        """
+        Обновление текстов виджетов при смене языка
+        """
+        self.label.setText(self.tr("Template"))
+        self.add_button.setText(self.tr("Add"))
+        self.remove_button.setText(self.tr("Remove"))
+        self.sender_label.setText(self.tr("Sender"))
+        self.subject_label.setText(self.tr("Subject"))
+        self.content_label.setText(self.tr("Content"))
+        self.save_button.setText(self.tr("Save"))

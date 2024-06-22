@@ -7,8 +7,12 @@
         <translation>Mailer</translation>
     </message>
     <message>
-        <source>Mail Processing</source>
-        <translation>Mail Processing</translation>
+        <source>E-mail Processing</source>
+        <translation>E-mail Processing</translation>
+    </message>
+    <message>
+        <source>Processing result</source>
+        <translation>Processing result</translation>
     </message>
     <message>
         <source>Incoming Mail</source>
@@ -224,12 +228,71 @@
 <context>
     <name>MailerSettingsOutgoingMsgsTab</name>
     <message>
-        <source>Outgoin Msgs Content</source>
-        <translation>Outgoin Msgs Content</translation>
+        <source>Template</source>
+        <translation>Template</translation>
     </message>
     <message>
-        <source>Outgoin Msgs Button</source>
-        <translation>Outgoin Msgs Button</translation>
+        <source>Add</source>
+        <translation>Add</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Remove</translation>
+    </message>
+    <message>
+        <source>Sender</source>
+        <translation>Sender</translation>
+    </message>
+    <message>
+        <source>Subject</source>
+        <translation>Subject</translation>
+    </message>
+    <message>
+        <source>Content</source>
+        <translation>Content</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Save</translation>
+    </message>
+    <message>
+        <source>Add Template</source>
+        <translation>Add Template</translation>
+    </message>
+    <message>
+        <source>Enter template name:</source>
+        <translation>Enter template name:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Warning</translation>
+    </message>
+    <message>
+        <source>Please add and select a template before saving.</source>
+        <translation>Please add and select a template before saving.</translation>
+    </message>
+    <message>
+        <source>Remove Template</source>
+        <translation>Remove Template</translation>
+    </message>
+    <message>
+        <source>Do you want to remove the template </source>
+        <translation>Do you want to remove the template </translation>
+    </message>
+</context>
+<context>
+    <name>StartStopEmailProcessingTab</name>
+    <message>
+        <source>E-mail processing result</source>
+        <translation>E-mail processing result</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Start</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Stop</translation>
     </message>
 </context>
 <context>

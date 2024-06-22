@@ -1,6 +1,5 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow, QTabWidget
-from PyQt6.QtCore import QSettings, QLocale
+from PyQt6.QtWidgets import QMainWindow, QTabWidget
 
 from gui.settings_general import GeneralSettingsTab
 from gui.settings_mailer_Install import MailerSettingsInitialTab
@@ -9,9 +8,9 @@ from gui.settings_goods import MailerSettingsGoodsTab
 from gui.settings_outgoing_msgs import MailerSettingsOutgoingMsgsTab
 from gui.help_general import GeneralHelpTab
 from gui.help_mailer import MailerHelpTab
-from gui.incoming_mail_tab import IncomingMailTab
-from gui.outgoing_mail_tab import OutgoingMailTab
-from controllers.main_controller import MainController
+from gui.mail_procesing_incoming_tab import IncomingMailTab
+from gui.mail_procesing_outgoing_tab import OutgoingMailTab
+from gui.mail_procesing_start_stop_tab import StartStopEmailProcessingTab
 
 
 
@@ -52,7 +51,10 @@ class MainWindow(QMainWindow):
 
         # Вкладка "Обучение"
         self.mail_processing = QTabWidget()
-        self.tabs.addTab(self.mail_processing, self.tr("Mail Processing"))
+        self.tabs.addTab(self.mail_processing, self.tr("E-mail Processing"))
+
+        self.start_stop_email_processing_tab = StartStopEmailProcessingTab(self.controller)
+        self.mail_processing.addTab(self.start_stop_email_processing_tab, self.tr("Processing result"))
 
         self.incoming_mail_tab = IncomingMailTab(self.controller)
         self.mail_processing.addTab(self.incoming_mail_tab, self.tr("Incoming Mail"))
@@ -118,8 +120,9 @@ class MainWindow(QMainWindow):
         """
         self.setWindowTitle(self.tr("Mailer"))
 
-        self.tabs.setTabText(self.tabs.indexOf(self.mail_processing), self.tr("Mail Processing"))
+        self.tabs.setTabText(self.tabs.indexOf(self.mail_processing), self.tr("E-mail Processing"))
 
+        self.mail_processing.setTabText(self.mail_processing.indexOf(self.start_stop_email_processing_tab), self.tr("Processing result"))
         self.mail_processing.setTabText(self.mail_processing.indexOf(self.incoming_mail_tab), self.tr("Incoming Mail"))
         self.mail_processing.setTabText(self.mail_processing.indexOf(self.outgoing_mail_tab), self.tr("Outgoing Mail"))
 

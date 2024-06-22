@@ -1,9 +1,9 @@
-from PyQt6.QtCore import QCoreApplication
-from PyQt6.QtWidgets import (QVBoxLayout, QLabel, QPushButton, QScrollArea,
+from PyQt6.QtWidgets import (QLabel, QPushButton, QScrollArea,
                              QFrame, QVBoxLayout, QHBoxLayout, QLineEdit,
                              QComboBox, QCheckBox, QDialog, QMessageBox, QSpinBox)
+
 from base.base_tab import BaseTab
-from utils.db_settings_goods import get_goods, get_template_names, save_good, delete_record_by_id
+from utils.db_settings_goods import get_goods, get_template_names, save_good, delete_good_by_id
 
 
 class MailerSettingsGoodsTab(BaseTab):
@@ -248,7 +248,7 @@ class MailerSettingsGoodsTab(BaseTab):
 
             if response == QMessageBox.StandardButton.Yes:
                 # Вызов функции для удаления записи товара из таблицы GOODS
-                delete_record_by_id(good)
+                delete_good_by_id(good)
                 msg_box.close()
                 dialog.close()
                 self.refresh_goods_list()

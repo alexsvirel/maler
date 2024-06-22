@@ -73,7 +73,7 @@ class GeneralSettingsTab(BaseTab):
         Получение индекса текущего выбранного стиля
         :return: Индекс выбранного стиля
         """
-        style = self.controller.settings.value("style", "classic")     # для отладки
+        style = self.controller.settings.value("style", "classic")
         return {
             "classic": 0,
             "blue": 1,

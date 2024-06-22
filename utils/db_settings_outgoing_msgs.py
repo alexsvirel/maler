@@ -5,16 +5,28 @@
 import sqlite3
 
 
-def add_template_to_db(template_name):
+def add_template_to_db(id, template_name):
     """
     Добавление нового шаблона в таблицу MSG_TEMPLATES
     :param template_name: Название шаблона
     """
     connection = sqlite3.connect('bd_mailer.db')
     cursor = connection.cursor()
-    cursor.execute('''INSERT INTO MSG_TEMPLATES (NAME) VALUES (?)''', (template_name,))
+    cursor.execute('''INSERT INTO MSG_TEMPLATES (ID, NAME) VALUES (?, ?)''', (id, template_name,))
     connection.commit()
     connection.close()
+
+def get_template_id():
+    """
+    Получение списка названий шаблонов из таблицы MSG_TEMPLATES
+    :return: Список названий шаблонов
+    """
+    connection = sqlite3.connect('bd_mailer.db')
+    cursor = connection.cursor()
+    cursor.execute('''SELECT ID FROM MSG_TEMPLATES''')
+    ids = cursor.fetchall()
+    connection.close()
+    return [id[0] for id in ids]
 
 
 def get_template_names():

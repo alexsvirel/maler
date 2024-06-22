@@ -7,8 +7,12 @@
         <translation>Mensajero</translation>
     </message>
     <message>
-        <source>Mail Processing</source>
+        <source>E-mail Processing</source>
         <translation>Procesamiento de correos</translation>
+    </message>
+    <message>
+        <source>Processing result</source>
+        <translation>Resultado del procesamiento</translation>
     </message>
     <message>
         <source>Incoming Mail</source>
@@ -224,12 +228,71 @@
 <context>
     <name>MailerSettingsOutgoingMsgsTab</name>
     <message>
-        <source>Outgoin Msgs Content</source>
-        <translation>Contenido del mensaje saliente</translation>
+        <source>Template</source>
+        <translation>Plantilla</translation>
     </message>
     <message>
-        <source>Outgoin Msgs Button</source>
-        <translation>Botón de mensaje saliente</translation>
+        <source>Add</source>
+        <translation>Añadir</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eliminar</translation>
+    </message>
+    <message>
+        <source>Sender</source>
+        <translation>Remitente</translation>
+    </message>
+    <message>
+        <source>Subject</source>
+        <translation>Asunto</translation>
+    </message>
+    <message>
+        <source>Content</source>
+        <translation>Contenido</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Guardar</translation>
+    </message>
+    <message>
+        <source>Add Template</source>
+        <translation>Añadir Plantilla</translation>
+    </message>
+    <message>
+        <source>Enter template name:</source>
+        <translation>Ingrese el nombre de la plantilla:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Advertencia</translation>
+    </message>
+    <message>
+        <source>Please add and select a template before saving.</source>
+        <translation>Por favor, añada y seleccione una plantilla antes de guardar.</translation>
+    </message>
+    <message>
+        <source>Remove Template</source>
+        <translation>Eliminar Plantilla</translation>
+    </message>
+    <message>
+        <source>Do you want to remove the template </source>
+        <translation>¿Desea eliminar la plantilla </translation>
+    </message>
+</context>
+<context>
+    <name>StartStopEmailProcessingTab</name>
+    <message>
+        <source>E-mail processing result</source>
+        <translation>Resultado del procesamiento de correo electrónico</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Comenzar</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Detener</translation>
     </message>
 </context>
 <context>
